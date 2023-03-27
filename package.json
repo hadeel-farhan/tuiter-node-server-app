@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "name": "tuiter-node-server-app",
+  "version": "1.0.0",
+  "description": " Node.js HTTP Web server for the Tuiter application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Hadeel Farhan",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadeel-farhan/tuiter-node-server-app.git"
+  },
+  "keywords": [
+    "Node",
+    "REST",
+    "Server",
+    "HTTP"
+  ],
+  "bugs": {
+    "url": "https://github.com/hadeel-farhan/tuiter-node-server-app/issues"
+  },
+  "homepage": "https://github.com/hadeel-farhan/tuiter-node-server-app#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
