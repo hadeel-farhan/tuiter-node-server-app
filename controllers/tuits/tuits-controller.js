@@ -31,13 +31,16 @@ const updateTuit = (req, res) => {
         { ...tuits[tuitIndex], ...updates };
     res.sendStatus(200);
 
-    const deleteTuit = (req, res) => {
-        const tuitId = req.params.tid;
-        tuits = tuits.filter(tuit =>
-            tuit._id !== tuitId);
-        res.sendStatus(200);
-    }
+
 }
+
+const deleteTuit = (req, res) => {
+    const tuitId = req.params.tid;
+    tuits = tuits.filter(tuit =>
+        tuit._id !== tuitId);
+    res.sendStatus(200);
+}
+
 export default (app) => {
     app.post('/api/tuits', createTuit);
     app.get('/api/tuits', findTuits);
